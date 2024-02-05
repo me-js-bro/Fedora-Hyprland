@@ -1,0 +1,53 @@
+{
+	"name": "ReactSnippets",
+	"description": "Code snippets for Reactjs development in ES6 syntax",
+	"version": "2.4.0",
+	"displayName": "Reactjs code snippets",
+	"publisher": "xabikos",
+	"icon": "images/react.png",
+	"galleryBanner": {
+		"theme": "light"
+	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/xabikos/vscode-react"
+	},
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "c807e072-5951-4a01-9542-450f946c7ec1",
+		"publisherId": "8961c3fe-3ec6-429d-886a-50b5af362a88",
+		"publisherDisplayName": "charalampos karypidis",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1705076952537,
+		"pinned": false,
+		"preRelease": false
+	}
+}
