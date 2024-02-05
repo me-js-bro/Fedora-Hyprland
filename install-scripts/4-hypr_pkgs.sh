@@ -30,6 +30,7 @@ hypr_package=(
   dolphin
   git
   grim
+  gwenview
   jq
   kitty
   kvantum
