@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # color defination
 red="\e[1;31m"
 green="\e[1;32m"
@@ -39,15 +38,18 @@ sddm_pkgs=(
 for pkgs in "${sddm_pkgs[@]}"; do
     install_package "$pkgs" "$log"
 done
+sleep 1 
+# clear 
 
-# set sddm theme
-SDDM_THEME='extras/sddm-theme'
-    printf "${action} - Setting up the login screen.\n"
-    sudo cp -r $SDDM_THEME /usr/share/sddm/themes/
-    sudo mkdir -p /etc/sddm.conf.d
-    printf "[Theme]\nCurrent=sddm-theme\n" | sudo tee -a /etc/sddm.conf.d/10-theme.conf &>> /dev/null
-    printf "${done} - Sddm theme installed.\n"
-    printf "[ DONE ] - Sddm theme installed.\n"  2>&1 | tee -a "$log" &>> /dev/null
 
-    sleep 1
-clear
+# # set sddm theme
+# SDDM_THEME='extras/sddm-theme'
+#     printf "${action} - Setting up the login screen.\n"
+#     sudo cp -r $SDDM_THEME /usr/share/sddm/themes/
+#     sudo mkdir -p /etc/sddm.conf.d
+#     printf "[Theme]\nCurrent=sddm-theme\n" | sudo tee -a /etc/sddm.conf.d/10-theme.conf &>> /dev/null
+#     printf "${done} - Sddm theme installed.\n"
+#     printf "[ DONE ] - Sddm theme installed.\n"  2>&1 | tee -a "$log" &>> /dev/null
+
+#     sleep 1
+# clear
