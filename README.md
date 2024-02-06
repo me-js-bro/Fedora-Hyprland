@@ -70,6 +70,14 @@
 #### I have added all the useful directories in the `~/.config/hypr/` directory and linked all the necessary directories in the `~/.config/` directory using the <i>ln -sf </i> command.
 #### For example, if you want to make changes in the key-bindings, just go to `~/.config/hypr/configs/` and edit the `keybinds.conf` file. Also if you want to make changes in the rofi configs, just go to `~/.config/hypr/rofi` and edit the files.
 <hr>
+
+<br>
+
+### A short `SDDM Theme Bug` that I could not fix.
+<hr>
+
+#### Well I tried to add a custom sddm theme with this installation. But there was a bug all the time. It was showing an error from the `Main.qml` file, that `QtGraphicalEffects` were not installed. But I already installed the packages. This little bug I could not fix, so I did not add any script to copy the sddm theme. If anyone can fix this, it will be helpful. I have put the `sddm-theme` in the `extras` directory.
+
 <br>
 
 
