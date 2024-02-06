@@ -33,10 +33,6 @@ log="Install-Logs/themes.log"
 mkdir -p ~/.themes
 mkdir -p ~/.icons
 
-THEME_DIR=~/.themes
-printf "${action} - Copying themes\n" && sleep 1
-cp -r "$THEME" ~/.themes/
-
 # backing up the qt5ct dir
 qt5ct=~/.config/qt5ct
 if [ -d "$qt5ct" ]; then
@@ -94,7 +90,7 @@ if [ ! -d '~/.icons/TokyoNight-SE' ]; then
     # extracting the icon
     tar -xf TokyoNight-SE.tar.bz2 -C ~/.icons/ 2>&1 | tee -a "$log"
 
-    if [ -d '~/.icons/TokyoNight-SE' ]; then
+    if [ -d ~/.icons/TokyoNight-SE ]; then
         printf "${done} - Successfully Installed Tokyo Night icons \n"
         printf "[ DONE ] - Successfully Installed Tokyo Night icons \n" 2>&1 | tee -a "$log" &>> /dev/null
     else
@@ -112,9 +108,9 @@ clear
 env_file=/etc/environment
 sudo sh -c "echo \"QT_QPA_PLATFORMTHEME='qt5ct'\" >> $env_file" 2>&1 | tee -a "$log"
 
-cd ~/.themes
-tar xf theme.tar.gz
-rm -rm theme.tar.gz
+# extracting themes to ~/.themes/
+printf "${action} - Copying themes\n" && sleep 1
+tar -xf "$THEME" -C ~/.themes/
 
 printf "${done} - Themes copied successfully...\n"
 printf "[ DONE ] - Themes copied successfully.\n" 2>&1 | tee -a "$log" &>> /dev/null
