@@ -107,11 +107,8 @@ chmod +x install.sh
 
 1) Fork this repository.
 2) Make sure to uncheck the Copy the `main` branch only, under the Description option. This will copy the development branch also
-3) After forking, Clone the development branch of the forked repository in your PC. Use this command:
-    ```
-    git clone --depth=1 -b development https://github.com/me-js-bro/Fedora-Hyprland.git
-    ```
-
+3) After forking, Clone the development branch of the forked repository in your PC. example:
+    `git clone --depth=1 -b development https://github.com/your_github_user_name/Fedora-Hyprland.git`
 4) Create a branch with your name on the forked repository ( GitHub Name )
 5) Commit the changes with some description. For example:<br>
     `git commit -m "added this feature in the _directory"`
