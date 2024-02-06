@@ -70,6 +70,14 @@
 #### I have added all the useful directories in the `~/.config/hypr/` directory and linked all the necessary directories in the `~/.config/` directory using the <i>ln -sf </i> command.
 #### For example, if you want to make changes in the key-bindings, just go to `~/.config/hypr/configs/` and edit the `keybinds.conf` file. Also if you want to make changes in the rofi configs, just go to `~/.config/hypr/rofi` and edit the files.
 <hr>
+
+<br>
+
+### A short `SDDM Theme Bug` that I could not fix.
+<hr>
+
+#### Well I tried to add a custom sddm theme with this installation. But there was a bug all the time. It was showing an error from the `Main.qml` file, that `QtGraphicalEffects` were not installed. But I already installed the packages. This little bug I could not fix, so I did not add any script to copy the sddm theme. If anyone can fix this, it will be helpful. I have put the `sddm-theme` in the `extras` directory.
+
 <br>
 
 
@@ -99,17 +107,14 @@ chmod +x install.sh
 
 1) Fork this repository.
 2) Make sure to uncheck the Copy the `main` branch only, under the Description option. This will copy the development branch also
-3) After forking, Clone the development branch of the forked repository in your PC. Use this command:
-    ```
-    git clone --depth=1 -b development https://github.com/me-js-bro/Fedora-Hyprland.git
-    ```
-
-4) Create a branch with your name on the forked repository ( GitHub Name )
-5) Commit the changes with some description. For example:<br>
+3) After forking, Clone the development branch of the forked repository in your PC. example: <br>
+    `git clone --depth=1 -b development https://github.com/your_github_user_name/Fedora-Hyprland.git`
+5) Create a branch with your name on the forked repository ( GitHub Name )
+6) Commit the changes with some description. For example:<br>
     `git commit -m "added this feature in the _directory"`
-6) Push changes to your created branch, For example: <br>
+7) Push changes to your created branch, For example: <br>
     `git push origin your_created_branch_name`
-7) And then, create a pull request with the changes you have made.
+8) And then, create a pull request with the changes you have made.
     - Make sure to add the <i> pull request </i> on the `development` branch of the main repository ( With descriptions )
 
 <br>
