@@ -30,6 +30,7 @@ hypr_package=(
   dolphin
   git
   grim
+  gwenview
   jq
   kitty
   kvantum
@@ -115,9 +116,12 @@ else
   printf "${done} - Grimblast was installed successfully"
 fi
 
-## Installing pywal colors
-printf "${action} - Now installing Pywal.\n"
+clear
+slee 1
 
-sudo pip3 install pywal 2>&1 | tee -a "$log"
+## Installing pywal
+  printf "${note} - Pywal is not installed, installing it.\n"
+
+  sudo pip3 install pywal 2>&1 | tee -a "$log"
 
 clear

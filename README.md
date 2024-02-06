@@ -46,9 +46,7 @@
 - `Swaylock-effects` - for swaylock effects
 - `Dunst` - for notifications
 - `Grimblast` - for screenshot
-- `Brightnessctl`  - for monitor and keyboard
-- `brightness` - not needed for desktop
-- `Swayimg` - for image viewer 
+- `Gwenview` - for image viewer 
 - `Pamixer` - for volume control notification
 - `Lxappearance` - for gtk themes
 - `Nwg-look` - for gtk themes

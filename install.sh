@@ -91,7 +91,7 @@ read -n1 -rep "Select: " CFG
 printf " \n"
 
 ## Config sddm theme
-printf "${note} - Would you like to install config sddm theme? [ y/n ]\n"
+printf "${note} - Would you like to install sddm as login manager? ( Don't select "y" if you already have any other login manager.) [ y/n ]\n"
 read -n1 -rep "Select: " SDDM_CFG
 printf " \n"
 
