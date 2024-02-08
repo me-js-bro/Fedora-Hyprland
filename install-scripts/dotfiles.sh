@@ -102,4 +102,12 @@ else
     sudo cp extras/hyprland.desktop /usr/share/wayland-sessions/
 fi
 
+# uncommenting WLR_RENDERER_ALLOW_SOFTWARE,1 if running in a VM is detected
+if hostnamectl | grep -q 'Chassis: vm'; then
+  echo "This script is running in a virtual machine."
+  sed -i '/env = WLR_NO_HARDWARE_CURSORS,1/s/^#//' config/hypr/configs/environment.conf
+  sed -i '/env = WLR_RENDERER_ALLOW_SOFTWARE,1/s/^#//' config/hypr/configs/environment.conf
+  sed -i '/monitor = Virtual-1, 1920x1080@60,auto,1/s/^#//' config/hypr/configs/settings.conf
+fi
+
 clear
