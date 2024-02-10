@@ -136,5 +136,7 @@ if [[ "$wallpaper" == "Y" || "$wallpaper" == "y" ]]; then
     else
         printf "${error} - Sorry, could not download wallpaper\n" && sleep 0.5
         printf "[ ERROR ] - Sorry, could not download wallpaper\n" 2>&1 | tee -a "$log" &>> /dev/null
+    fi
+fi
 
 clear
