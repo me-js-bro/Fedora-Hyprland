@@ -1,7 +1,15 @@
 #!/bin/bash
 
-###### Mahins Hyprland v1 installation script ######
-####################################################
+###### Hyprland Installation Script for Fedora Linux ######
+#                                                         #
+#         ███╗   ███╗ █████╗ ██╗  ██╗██╗███╗   ██╗        #
+#         ████╗ ████║██╔══██╗██║  ██║██║████╗  ██║        #
+#         ██╔████╔██║███████║███████║██║██╔██╗ ██║        #
+#         ██║╚██╔╝██║██╔══██║██╔══██║██║██║╚██╗██║        #
+#         ██║ ╚═╝ ██║██║  ██║██║  ██║██║██║ ╚████║        #
+#         ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝        #
+#                                                         #
+###########################################################
 
 ### Because I'm on a Desktop Computer and I don't have a laptop, I could not test scripts for the blurtooth brightness control and other festures...
 
