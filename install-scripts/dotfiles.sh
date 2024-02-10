@@ -102,4 +102,28 @@ else
     sudo cp extras/hyprland.desktop /usr/share/wayland-sessions/
 fi
 
+clear && sleep 1
+
+# Asking if the user wants to download more wallpapers
+printf "${attention} - Would you like to add more ${green}Wallpapers${end}? [ y/n ]\n"
+read -n1 -rep "Select: " wallpaper
+
+printf " \n"
+
+if [[ "$wallpaper" == "Y" || "$wallpaper" == "y" ]]; then
+    printf "${action} - Downloading some wallpapers...\n" && sleep 1
+
+    # cloning the wallpapers in a temporary directory
+    git clone --depth=1 https://github.com/md-mahin-islam-mahi/Wallpaper-Store.git ~/.wallpaper-cache 2>&1 | tee -a "$log" &>> /dev/null
+
+    # copying the wallpaper to the main directory
+    if [ -d ~/.wallpaper-cache ]; then
+        cp ~/.wallpaper-cache/* ~/.config/hypr/Wallpaper/
+        rm -rf ~/.wallpaper-cache
+        printf "${done} - Wallpapers downloaded successfully..\n" & sleep 0.5
+        printf "[ DONE ] - Wallpapers downloaded successfully..\n" 2>&1 | tee -a "$log" &>> /dev/null
+    else
+        printf "${error} - Sorry, could not download wallpaper\n" && sleep 0.5
+        printf "[ ERROR ] - Sorry, could not download wallpaper\n" 2>&1 | tee -a "$log" &>> /dev/null
+
 clear
