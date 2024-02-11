@@ -37,7 +37,6 @@ source $ScrDir/1-global.sh
 # main packages
 hypr_package=( 
   curl
-  dunst
   dolphin
   git
   grim
@@ -87,6 +86,7 @@ copr_packages=(
   cliphist
   pamixer
   swaylock-effects
+  SwayNotificationCenter
   swww
 )
 
