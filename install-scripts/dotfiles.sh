@@ -34,7 +34,7 @@ printf "${attention} - Now starting the script for copying dotfiles. It will clo
 mkdir -p ~/.config
 
     # if some main directories exists, backing them up.
-    for DIR in cava dunst hypr kitty neofetch rofi swaylock waybar wlogout; do
+    for DIR in cava hypr kitty neofetch rofi swaylock swaync waybar wlogout; do
         DIRPATH=~/.config/$DIR
         if [ -d "$DIRPATH" ]; then
             printf "${attention} - Config for $DIR located, backing up.\n"
@@ -69,12 +69,12 @@ mkdir -p ~/.config
 
         # making symbolid link of the main directories. they should be edited from ~/.config/hypr directory. ( if needed )
         # ln -sf ~/.config/hypr/btop ~/.config/btop
-        ln -sf ~/.config/hypr/dunst ~/.config/dunst
         ln -sf ~/.config/hypr/kitty ~/.config/kitty
         ln -sf ~/.config/hypr/cava ~/.config/cava
         ln -sf ~/.config/hypr/neofetch ~/.config/neofetch
         ln -sf ~/.config/hypr/rofi ~/.config/rofi
         ln -sf ~/.config/hypr/swaylock ~/.config/swaylock
+        ln -sf ~/.config/hypr/swaync ~/.config/swaync
         ln -sf ~/.config/hypr/waybar ~/.config/waybar
         ln -sf ~/.config/hypr/wlogout ~/.config/wlogout
 
