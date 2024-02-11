@@ -46,7 +46,7 @@
 - `Swwww` - for wallpaper and wallpaper animation
 - `Swaylock` - for lockscreen
 - `Swaylock-effects` - for swaylock effects
-- `Dunst` - for notifications
+- `Swaync` - for notifications
 - `Grimblast` - for screenshot
 - `Gwenview` - for image viewer 
 - `Pamixer` - for volume control notification
