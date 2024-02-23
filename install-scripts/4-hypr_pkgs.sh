@@ -37,11 +37,11 @@ source $ScrDir/1-global.sh
 # main packages
 hypr_package=( 
   curl
-  dolphin
   git
   grim
   gwenview
   jq
+  kde-partitionmanager
   kitty
   kvantum
   libX11-devel
@@ -94,6 +94,8 @@ copr_packages=(
 thunar=(
 ffmpegthumbnailer
 file-roller
+gvfs
+gvfs-mtp 
 Thunar 
 thunar-volman 
 tumbler 
