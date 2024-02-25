@@ -136,6 +136,7 @@ if [[ $INST_PKGS == "Y" || $INST_PKGS == "y" ]]; then
    "$install_script_dir/4-hypr_pkgs.sh"  # Main packages
    "$install_script_dir/5-fonts.sh"      # fonts
    "$install_script_dir/6-nwgLook.sh" # nwg-look
+   "$install_script_dir/7-pywal.sh" # pywal
 
     if [[ $bluetooth == "y" || $bluetooth == "Y" ]]; then
         "$install_script_dir/bluetooth.sh"  # install and setup bluetooth
