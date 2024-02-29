@@ -31,6 +31,7 @@ error="${red}[ ERROR ]${end}"
 # Install THEME
 CONFIG_DIR=$HOME/.config
 THEME='extras/theme.tar.gz'
+ICON='extras/Icon_TelaDracula.tar.gz'
 KVANTUM='extras/Kvantum'
 GTK3='extras/gtk-3.0'
 GTK4='extras/gtk-4.0'
@@ -100,6 +101,7 @@ if [ ! -d '~/.icons/TokyoNight-SE' ]; then
 
     # extracting the icon
     tar -xf TokyoNight-SE.tar.bz2 -C ~/.icons/ 2>&1 | tee -a "$log"
+    tar -xf "$ICON" -C ~/.icons/ 2>&1 | tee -a "$log"
 
     if [ -d ~/.icons/TokyoNight-SE ]; then
         printf "${done} - Successfully Installed Tokyo Night icons \n"
