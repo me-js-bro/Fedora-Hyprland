@@ -36,7 +36,7 @@
 
 ### `[ Must Read ]`
 #### As I use only a Desktop Pc, and I don't have any laptop, I could not add some features like Bletooth and Brightness Controller. Also this script is not supported for Nvidia GPU Drivers and Asus ROG laptops. I would like if you contribute on this project and add these features.
-#### Also this script (dotfiles) may not work in `Virtual Box.` However I have added some lines in the settings. If you install the script in a Virtual Box, make sure to uncomment these lines before `Rebooting` the system. </br> </br> 1) go to `~/.config/hypr/configs/environment.conf`, and uncomment first 2 `env` lines. </br> 2) go to `~/.config/hypr/configs/settings.conf` and comment out `monitor=,preferred,auto,auto` and uncomment `#monitor = Virtual-1, 1920x1080@60,auto,1` </h4>
+#### Also this script (dotfiles) may not work in `Virtual Box.` However I have added some lines in the settings. If you install the script in a Virtual Box, make sure to uncomment these lines before `Rebooting` the system. </br> </br> 1) go to `~/.config/hypr/configs/environment.conf`, and uncomment first 2 `env` lines. </br> 2) go to `~/.config/hypr/configs/settings.conf` and comment out `monitor=,preferred,auto,auto` and uncomment `#monitor = Virtual-1, 1920x1080@60,auto,1`
 
 ### I would like to mention [`JaKooLit`](https://github.com/JaKooLit) here. I took some of his scripts, modified and used for my project. Here is his [Fedora Hyprland Script](https://github.com/JaKooLit/Fedora-Hyprland) installation repository. <hr>
 
