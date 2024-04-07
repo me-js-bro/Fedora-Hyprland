@@ -37,6 +37,7 @@ source $ScrDir/1-global.sh
 # main packages
 hypr_package=( 
   curl
+  firefox
   git
   grim
   gwenview
