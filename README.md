@@ -34,9 +34,9 @@
 
 - File Manager-2: [`Thunar`](https://docs.xfce.org/xfce/thunar/start)
 
-## [ `Must Read` ] As I use only a Desktop Pc, and I don't have any laptop, I could not add some features like Bletooth and Brightness Controller. Also this script is not supported for Nvidia GPU Drivers and Asus ROG laptops. I would like if you contribute on this project and add these features.
-## Also this script (dotfiles) may not work in `Virtual Box.` However I have added some lines in the settings. If you install the script in a Virtual Box, make sure to uncomment these lines before `Rebooting` the system. </br> </br> 1) go to `~/.config/hypr/configs/environment.conf`, and uncomment first 2 `env` lines. </br> </br> 2) go to `~/.config/hypr/configs/settings.conf` and comment out `monitor=,preferred,auto,auto` and uncomment `#monitor = Virtual-1, 1920x1080@60,auto,1`
-<br>
+### `[ Must Read ]`
+#### As I use only a Desktop Pc, and I don't have any laptop, I could not add some features like Bletooth and Brightness Controller. Also this script is not supported for Nvidia GPU Drivers and Asus ROG laptops. I would like if you contribute on this project and add these features.
+#### Also this script (dotfiles) may not work in `Virtual Box.` However I have added some lines in the settings. If you install the script in a Virtual Box, make sure to uncomment these lines before `Rebooting` the system. </br> </br> 1) go to `~/.config/hypr/configs/environment.conf`, and uncomment first 2 `env` lines. </br> 2) go to `~/.config/hypr/configs/settings.conf` and comment out `monitor=,preferred,auto,auto` and uncomment `#monitor = Virtual-1, 1920x1080@60,auto,1` </h4>
 
 ### I would like to mention [`JaKooLit`](https://github.com/JaKooLit) here. I took some of his scripts, modified and used for my project. Here is his [Fedora Hyprland Script](https://github.com/JaKooLit/Fedora-Hyprland) installation repository. <hr>
 
@@ -75,12 +75,22 @@
 
 <br>
 
-### A short `SDDM Theme Bug` that I could not fix.
-<hr>
+### A short `SDDM Theme Bug` that I could not fix (Only for Fedora).
 
 #### Well I tried to add a custom sddm theme with this installation. But there was a bug all the time. It was showing an error from the `Main.qml` file, that `QtGraphicalEffects` were not installed. But I already installed the packages. This little bug I could not fix, so I did not add any script to copy the sddm theme. If anyone can fix this, it will be helpful. I have put the `sddm-theme` in the `extras` directory.
 
-<br>
+<hr>
+
+### Settings you need to change colors in Firefox:
+
+#### I have also added script to change colors in firefox. For that you need to change a little thing.
+
+### Processes:
+1) Open firefox and in the address bar, type `about:config` and enter. <img src="assets/process-1.png">
+2) Now search for `toolkit.legacyUserProfileCustomizations.stylesheets`. If it is false, make it true by double clicking it. <img src="assets/process-2.png">
+3) Now restart firefox and thats it.
+
+<hr>
 
 
 ### Clone this repository and run these commands.
