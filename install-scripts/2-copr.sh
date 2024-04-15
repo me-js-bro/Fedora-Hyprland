@@ -31,7 +31,7 @@ error="${red}[ ERROR ]${end}"
 COPR_REPOS=(
 solopasha/hyprland
 en4aew/desktop-tools
-gloriouseggroll/kde6-f39 
+# gloriouseggroll/kde6-f39
 trs-sod/swaylock-effects
 alebastr/sway-extras
 erikreider/SwayNotificationCenter  
