@@ -187,7 +187,7 @@ else
     printf "[ ERROR ] - Installing and setting up the zsh is cancled\n" 2>&1 | tee -a "$log" &>> /dev/null
 fi
 
-
+clear
 
 
 # Vs Code Theme Set
