@@ -65,6 +65,11 @@ mkdir -p ~/.config
         cd ~/.config/hypr
 
         mv "$hypr_dir/fedora-neofetch" "$hypr_dir/neofetch"
+
+        # removing other neofetch folders and .git
+        rm -r "$hypr_dir/arch-neofetch"
+        rm -r "$hypr_dir/opensuse-neofetch"
+        rm -r "$hypr_dir/.git"
         sleep 1
 
         # making symbolid link of the main directories. they should be edited from ~/.config/hypr directory. ( if needed )
