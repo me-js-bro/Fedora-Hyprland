@@ -37,7 +37,7 @@ source $ScrDir/1-global.sh
 # Installing brave browser.
 clear
 
-printf "${action} - Now preparing to install ${cyan}Brave Browser${end}\n"
+printf "${action} - Now install the ${cyan}Brave Browser${end}.\n"
 sleep 1
 
 sudo dnf install -y dnf-plugins-core
