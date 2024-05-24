@@ -137,7 +137,7 @@ if [[ $INST_PKGS == "Y" || $INST_PKGS == "y" ]]; then
    "$install_script_dir/5-fonts.sh"      # fonts
    "$install_script_dir/6-nwgLook.sh" # nwg-look
    "$install_script_dir/7-pywal.sh" # pywal
-   "$install_script_dir/8-brave.sh" # brave browser
+   "$install_script_dir/browser.sh" # browser
 
     if [[ $bluetooth == "y" || $bluetooth == "Y" ]]; then
         "$install_script_dir/bluetooth.sh"  # install and setup bluetooth
