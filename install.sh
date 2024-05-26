@@ -104,7 +104,7 @@ read -n1 -rep "Select: " SDDM_CFG
 printf " \n"
 
 ## Install zsh, oh-my-zsh and powerleven10k theme
-printf "${note} - Would like to install zsh, oh-my-zsh and powerlevel10k theme on your system? [ y/n ]\n"
+printf "${note} - Would like to install zsh, oh-my-zsh and powerlevel10k theme on your system? If not, then we will configure your bash... [ y/n ]\n"
 read -n1 -rep "Select: " zsh
 printf " \n"
 
@@ -184,8 +184,7 @@ clear
 if [[ $zsh == "y" || $zsh == "Y" ]]; then
     "$install_script_dir/zsh.sh"
 else
-    printf "${error} - Installing and setting up the zsh is cancled\n"
-    printf "[ ERROR ] - Installing and setting up the zsh is cancled\n" 2>&1 | tee -a "$log" &>> /dev/null
+    "$install_script_dir/bash.sh"
 fi
 
 clear
