@@ -93,14 +93,14 @@ copr_packages=(
 
 # thunar file manager
 thunar=(
-ffmpegthumbnailer
-file-roller
-gvfs
-gvfs-mtp 
-Thunar 
-thunar-volman 
-tumbler 
-thunar-archive-plugin
+  ffmpegthumbnailer
+  file-roller
+  gvfs
+  gvfs-mtp 
+  Thunar 
+  thunar-volman 
+  tumbler 
+  thunar-archive-plugin
 )
 
 # url to install grimblast

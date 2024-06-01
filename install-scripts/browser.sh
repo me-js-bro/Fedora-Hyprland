@@ -35,7 +35,7 @@ ScrDir=`dirname "$(realpath "$0")"`
 source $ScrDir/1-global.sh
 
 # asking which browser wants to install
-printf "Which browser would you like to install?\n1) Brave-Browser. \n2) Chromium. \n"
+printf "Which browser would you like to install?\n1) ${orange}Brave-Browser.${end} \n2) ${cyan}Chromium.${end} \n"
 read -n1 -rep "Select: " browser
 printf " \n"
 
@@ -47,7 +47,7 @@ if [[ "$browser" == "1" ]]; then
 
     sleep 0.5
 
-    sudo dnf install brave-browser 2>&1 | tee -a "$log"
+    sudo dnf install -y brave-browser 2>&1 | tee -a "$log"
 else
     printf "${action} - Installing ${cyan}Chromium${end}\n"
     install_package chromium 2>&1 | tee -a "$log"

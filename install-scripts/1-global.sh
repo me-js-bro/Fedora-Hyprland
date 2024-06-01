@@ -51,7 +51,7 @@ install_package() {
       # Something is missing, exiting to review log
       printf "${error} - $1 failed to install :( , please check the install.log .Maybe you may need to install manually.\n"
       printf "[ ERROR ] -  $1 failed to install :( , please check the install.log. Maybe you may need to install manually.\n" 2>&1 | tee -a "$log" &>> /dev/null
-      exit 1
+      # exit 1
     fi
   fi
 }
