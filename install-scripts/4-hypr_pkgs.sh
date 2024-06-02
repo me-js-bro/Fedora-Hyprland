@@ -38,6 +38,7 @@ source $ScrDir/1-global.sh
 hypr_package=( 
   curl
   firefox
+  ffmpeg-free
   git
   gparted
   grim
