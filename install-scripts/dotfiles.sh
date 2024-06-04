@@ -34,7 +34,7 @@ printf "${attention} - Now starting the script for copying dotfiles. It will clo
 mkdir -p ~/.config
 
     # if some main directories exists, backing them up.
-    for DIR in cava hypr kitty neofetch rofi swaylock swaync waybar wlogout; do
+    for DIR in hypr kitty neofetch rofi swaylock swaync waybar wlogout; do
         DIRPATH=~/.config/$DIR
         if [ -d "$DIRPATH" ]; then
             printf "${attention} - Config for $DIR located, backing up.\n"
@@ -69,13 +69,12 @@ mkdir -p ~/.config
         # removing other neofetch folders and .git
         rm -r "$hypr_dir/arch-neofetch"
         rm -r "$hypr_dir/opensuse-neofetch"
-        rm -r "$hypr_dir/.git"
+        sudo rm -r "$hypr_dir/.git"
         sleep 1
 
         # making symbolid link of the main directories. they should be edited from ~/.config/hypr directory. ( if needed )
         # ln -sf ~/.config/hypr/btop ~/.config/btop
         ln -sf ~/.config/hypr/kitty ~/.config/kitty
-        ln -sf ~/.config/hypr/cava ~/.config/cava
         ln -sf ~/.config/hypr/neofetch ~/.config/neofetch
         ln -sf ~/.config/hypr/rofi ~/.config/rofi
         ln -sf ~/.config/hypr/swaylock ~/.config/swaylock

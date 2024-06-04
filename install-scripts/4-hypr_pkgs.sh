@@ -40,7 +40,6 @@ hypr_package=(
   firefox
   ffmpeg-free
   git
-  gparted
   grim
   gwenview
   jq
